@@ -13,5 +13,6 @@ libraries {
         destination = "data/digator-label-studio:digator_opennlp"
     }
     mattermost
+    python
     sonarqube
 }
