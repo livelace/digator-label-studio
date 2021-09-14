@@ -12,6 +12,7 @@ libraries {
         source = "digator_opennlp.dockerfile"
         destination = "data/digator-label-studio:digator_opennlp"
     }
+    python
     mattermost
     sonarqube
 }
