@@ -15,7 +15,7 @@ class DigatorOpennlp(LabelStudioMLBase):
         os.environ.setdefault("DIGATOR_LOG_LEVEL", "INFO")
         self.digator_log_level = os.environ["DIGATOR_LOG_LEVEL"]
 
-        os.environ.setdefault("DIGATOR_OPENNLP_URL", "http://127.0.0.1:8080/ner/news/ru/combined?format=label-studio")
+        os.environ.setdefault("DIGATOR_OPENNLP_URL", "http://127.0.0.1:8080/ner/news/ru/all?format=label-studio")
         self.digator_opennlp_url = os.environ["DIGATOR_OPENNLP_URL"]
 
         os.environ.setdefault("DIGATOR_SSL_VERIFY", "True")
