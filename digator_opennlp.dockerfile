@@ -1,9 +1,10 @@
 FROM        docker.io/python:3.8-slim
 
 ENV         APP_DIR="/digator-label-studio"
-ENV         PIP_CONFIG_FILE="pip.conf"
+ENV         PIP_CONFIG_FILE="$APP_DIR/pip.conf"
 
 COPY        "work/digator_opennlp.py" "$APP_DIR/digator_opennlp.py"
+COPY        "work/pip.conf" "$APP_DIR/pip.conf"
 COPY        "work/requirements.txt" "$APP_DIR/requirements.txt"
 
 RUN         pip install -r "$APP_DIR/requirements.txt" && \
