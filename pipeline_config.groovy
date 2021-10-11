@@ -20,6 +20,8 @@ libraries {
         destination = "data/${APP_NAME}:${env.BACKEND}"
     }
     mattermost
-    python
+    python {
+        test = false
+    }
     sonarqube
 }
